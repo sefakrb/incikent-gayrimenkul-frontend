@@ -14,12 +14,12 @@
         padding-bottom: 1%;
       "
       flat
-      class="d-flex justify-center align-end font-weight-bold"
+      class="centerize align-end font-weight-bold"
       >Yeni Ev mi Arıyorsunuz ?</v-card
     >
     <v-card
       style="background-color: transparent"
-      class="d-flex justify-center align-center"
+      class="centerize"
       width="100%"
       flat
     >
@@ -28,10 +28,7 @@
       </div>
     </v-card>
 
-    <v-card
-      style="background-color: transparent"
-      class="d-flex justify-center align-center mt-5"
-      flat
+    <v-card style="background-color: transparent" class="centerize mt-5" flat
       ><v-btn color="#0009" to="/advertisement" outlined
         >İLANLARI GÖRMEK İÇİN TIKLAYINIZ</v-btn
       ></v-card
@@ -47,3 +44,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.centerize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>

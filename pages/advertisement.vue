@@ -1,41 +1,78 @@
 <template>
-  <v-row class="d-flex justify-center ma-0 pa-0 bg">
-    <v-card
-      :width="cardWidth"
-      v-for="advertisement in advertisements"
-      :key="advertisement"
-      elevation="24"
-      class="cardSize"
-    >
-      <v-img
-        min-height="25vh"
-        max-height="25vh"
-        :src="require('../assets/images/' + advertisement.image)"
-      ></v-img>
-      <v-card-title class="d-flex justify-center">
-        {{ advertisement.title }}
-      </v-card-title>
-      <v-card-text class="textType">
-        Tarih: {{ advertisement.date }}
-      </v-card-text>
-      <v-card-text class="textType">
-        Bölge: {{ advertisement.region }}
-      </v-card-text>
-      <v-card-text class="textType font-weight-bold">
-        {{ advertisement.price }} ₺
-      </v-card-text>
-      <div class="ma-0 pa-0 d-flex justify-end">
-        <v-btn
-          small
-          color="yellow"
-          outlined
-          class="mr-1 mb-1"
-          :href="advertisement.link"
-          target="_blank"
-          >ilan detayları</v-btn
-        >
-      </div>
-    </v-card>
+  <v-row class="ma-0 pa-0" style="height: 100%">
+    <v-col cols="5">
+      <v-card class="fixCredit" flat>
+        <div class="centerize">
+          <v-img
+            max-width="20vw"
+            contain
+            :src="require('../assets/images/house2.svg')"
+          ></v-img>
+        </div>
+        <v-row class="mt-10 centerize">
+          <v-col class="centerize flex-column" cols="10">
+            <v-text-field
+              color="yellow"
+              label="Tutar"
+              outlined
+              dense
+            ></v-text-field>
+            <v-text-field
+              color="yellow"
+              label="Vade"
+              outlined
+              dense
+            ></v-text-field>
+            <v-text-field
+              color="yellow"
+              label="Field"
+              outlined
+              dense
+            ></v-text-field>
+            <v-btn small color="yellow" outlined>hesapla</v-btn>
+          </v-col>
+        </v-row>
+      </v-card>
+    </v-col>
+
+    <v-col cols="7" class="centerize flex-column">
+      <v-card
+        width="80%"
+        v-for="advertisement in advertisements"
+        :key="advertisement"
+        elevation="12"
+        class="cardSize"
+      >
+        <v-img
+          min-height="25vh"
+          max-height="25vh"
+          :src="require('../assets/images/' + advertisement.image)"
+        ></v-img>
+        <v-card-title class="centerize">
+          {{ advertisement.title }}
+        </v-card-title>
+        <v-card-text class="textType">
+          Tarih: {{ advertisement.date }}
+        </v-card-text>
+        <v-card-text class="textType">
+          Bölge: {{ advertisement.region }}
+        </v-card-text>
+        <v-card-text class="textType font-weight-bold">
+          {{ advertisement.price }} ₺
+        </v-card-text>
+        <div class="ma-0 pa-0 d-flex justify-end">
+          <v-btn
+            small
+            color="yellow"
+            outlined
+            class="mr-1 mb-1"
+            :href="advertisement.link"
+            target="_blank"
+            >ilan detayları</v-btn
+          >
+        </div>
+      </v-card>
+    </v-col>
   </v-row>
 </template>
 
@@ -116,11 +153,18 @@ export default {
   margin: 0;
   padding: 0;
 }
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: url('../assets/images/deneme5.jpg') no-repeat center center;
-  background-size: cover;
+.centerize {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.fixCredit {
+  position: fixed;
+  top: 25vh;
+  bottom: 0;
+  right: 0;
+  left: 3%;
+  width: 30%;
 }
 </style>

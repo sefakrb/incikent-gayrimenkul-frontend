@@ -1,7 +1,7 @@
 <template>
   <v-app dark>
     <v-card flat tile class="ma-0 pa-0">
-      <v-app-bar class="ma-0 pa-0" color="black">
+      <v-app-bar app class="ma-0 pa-0" color="black">
         <v-row>
           <v-col class="d-flex align-center" cols="1">
             <v-app-bar-nav-icon
@@ -24,10 +24,11 @@
       </v-app-bar>
 
       <v-navigation-drawer
+        @click:outside="drawer = false"
         dark
         v-model="drawer"
         height="100vh"
-        absolute
+        fixed
         temporary
       >
         <v-list nav dense>

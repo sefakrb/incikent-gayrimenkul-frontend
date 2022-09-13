@@ -1,6 +1,6 @@
 <template>
   <div style="height: 100%">
-    <v-row style="height: 100%">
+    <v-row class="ma-0 pa-0" style="height: 100%">
       <v-col class="centerize" cols="12" md="7">
         <v-img
           max-width="80%"
@@ -16,10 +16,9 @@
           :width="cardWidth"
           flat
         >
-          <v-card-title
-            class="d-flex justify-center font-weight-bold text-h6"
-            >{{ data.title }}</v-card-title
-          >
+          <v-card-title class="centerize font-weight-bold text-h6">{{
+            data.title
+          }}</v-card-title>
           <v-divider style="margin: 10%" class="mt-0 mb-0"></v-divider>
           <v-card-text class="centerize font-weight-bold"
             ><v-icon :color="data.color" class="mr-2">{{ data.icon }}</v-icon
