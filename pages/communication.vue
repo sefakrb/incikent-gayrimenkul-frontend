@@ -16,11 +16,15 @@
           :width="cardWidth"
           flat
         >
-          <v-card-title class="centerize font-weight-bold text-h6">{{
-            data.title
-          }}</v-card-title>
+          <v-card-title
+            style="font-size: 1.7rem"
+            class="centerize font-weight-bold"
+            >{{ data.title }}</v-card-title
+          >
           <v-divider style="margin: 10%" class="mt-0 mb-0"></v-divider>
-          <v-card-text class="centerize font-weight-bold"
+          <v-card-text
+            style="font-size: 1.1rem"
+            class="centerize font-weight-bold"
             ><v-icon :color="data.color" class="mr-2">{{ data.icon }}</v-icon
             >{{ data.text }}</v-card-text
           ></v-card
@@ -51,7 +55,7 @@ export default {
         {
           title: 'Telefon',
           icon: 'mdi-phone',
-          pink: 'green',
+          color: 'green',
           text: '0545 840 1819',
         },
         {
@@ -63,7 +67,7 @@ export default {
         {
           title: 'Adres',
           icon: 'mdi-map-marker',
-          pink: 'blue',
+          color: 'blue',
           text: 'General Zeki Doğan, İncikent Emlak, Natoyolu Caddesı 56/A, 06630 Mamak/Ankara',
         },
       ],
