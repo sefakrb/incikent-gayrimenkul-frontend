@@ -3,7 +3,7 @@
     <v-card flat tile class="ma-0 pa-0">
       <v-app-bar class="ma-0 pa-0" color="black">
         <v-row>
-          <v-col cols="1">
+          <v-col class="d-flex align-center" cols="1">
             <v-app-bar-nav-icon
               style="color: white"
               @click="drawer = true"
@@ -62,9 +62,9 @@
     <v-main>
       <Nuxt />
     </v-main>
-    <v-footer color="black" app>
+    <!-- <v-footer color="black" app>
       <span style="color: white">&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    </v-footer> -->
   </v-app>
 </template>
 

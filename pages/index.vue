@@ -7,9 +7,14 @@
   >
     <v-card
       height="40%"
-      style="background-color: transparent; color: #fff5ee; padding-top: 10%"
+      style="
+        background-color: transparent;
+        font-size: 3.1rem;
+        color: #fff5ee;
+        padding-bottom: 1%;
+      "
       flat
-      class="d-flex justify-center align-center text-h2 text-center font-weight-bold"
+      class="d-flex justify-center align-end font-weight-bold"
       >Yeni Ev mi Arıyorsunuz ?</v-card
     >
     <v-card
