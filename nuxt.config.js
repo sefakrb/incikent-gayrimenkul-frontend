@@ -21,10 +21,11 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/css/inputNumber.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [    '~/plugins/vuetify-mask.js'
+],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
