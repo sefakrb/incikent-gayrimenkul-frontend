@@ -13,9 +13,8 @@ interface AdvertisementData {
 }
 
 export default {
-    async getAdvertisement(){
-        console.log("getAdvertisement");
-        return (await advertisement.get("advertisement/")).data
+    async getAdvertisements(){
+        return (await advertisement.get("advertisement/")).data.data
     },
 
     createAdvertisement(advertisementData: AdvertisementData) {
