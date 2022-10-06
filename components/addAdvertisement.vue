@@ -4,7 +4,7 @@
       <v-row>
         <v-col cols="11">
           <v-card-title class="justify-center text-h4 font-weight-medium"
-            >İLAN EKLE</v-card-title
+            >İlan Ekle</v-card-title
           ></v-col
         >
         <v-col class="centerize pb-3" cols="1">
@@ -57,7 +57,6 @@
             dense
             label="price"
             v-bind:properties="{
-              // prefix: 'Faiz Oranı',
               readonly: false,
               disabled: false,
               outlined: true,
@@ -138,7 +137,7 @@ import imageService from "../services/image.service"
 export default {
   props: {
     editedAdvertisement: {
-      imageUrl: String,
+      imageId: String,
       title: String,
       price: Number,
       region: String,
@@ -162,6 +161,7 @@ export default {
       rules: [(v) => !!v || "gerekli"],
       imageRules: [(value) => !!value || "gerekli"],
       linkRule: [this.isValidUrl || "geçerli url adresi girin"],
+      baseUrl: process.env.BACKEND_URL,
     }
   },
 
@@ -169,7 +169,7 @@ export default {
 
   mounted() {
     if (this.editedAdvertisement.link) {
-      this.image = this.editedAdvertisement.imageUrl
+      this.image = this.baseUrl + "/" + this.editedAdvertisement.imageId
       this.title = this.editedAdvertisement.title
       this.price = this.editedAdvertisement.price
       this.region = this.editedAdvertisement.region
@@ -246,7 +246,7 @@ export default {
       handler(n, o) {
         console.log(n, o)
         if (n) {
-          this.image = n.imageUrl
+          this.image = this.baseUrl + "/" + n.imageId
           this.title = n.title
           this.price = n.price
           this.region = n.region

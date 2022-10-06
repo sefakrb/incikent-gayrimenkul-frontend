@@ -24,7 +24,8 @@
           </template>
 
           <template v-slot:[`item.image`]="{ item }">
-            <v-img class="imageSize" :src="item.imageUrl"> </v-img
+            <v-img class="imageSize" :src="baseUrl + '/' + item.imageId">
+            </v-img
           ></template>
           <template v-slot:[`item.meter`]="{ item }">
             {{ item.meter }}</template
@@ -80,6 +81,7 @@ export default {
         { text: "Eylemler", value: "infoActions" },
       ],
       advertisements: [],
+      baseUrl: process.env.BACKEND_URL,
     }
   },
 
