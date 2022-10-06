@@ -87,16 +87,13 @@ export default {
 
   async created() {
     this.advertisements = await advertisementService.getAdvertisements()
-    console.log(this.advertisements)
   },
 
   methods: {
     editAdvertisement(advertisement) {
       this.$emit("edit", advertisement)
     },
-    deleteAdvertisement(advertisement) {
-      console.log(advertisement)
-    },
+    deleteAdvertisement(advertisement) {},
   },
 }
 </script>

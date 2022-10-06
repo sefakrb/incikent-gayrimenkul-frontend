@@ -53,36 +53,35 @@ export default {
     return {
       datas: [
         {
-          title: 'Telefon',
-          icon: 'mdi-phone',
-          color: 'green',
-          text: '0545 840 1819',
+          title: "Telefon",
+          icon: "mdi-phone",
+          color: "green",
+          text: "0545 840 1819",
         },
         {
-          title: 'Instagram',
-          icon: 'mdi-instagram',
-          color: 'pink',
-          text: '@incikentgayrimenkul',
+          title: "Instagram",
+          icon: "mdi-instagram",
+          color: "pink",
+          text: "@incikentgayrimenkul",
         },
         {
-          title: 'Adres',
-          icon: 'mdi-map-marker',
-          color: 'blue',
-          text: 'General Zeki Doğan, İncikent Emlak, Natoyolu Caddesı 56/A, 06630 Mamak/Ankara',
+          title: "Adres",
+          icon: "mdi-map-marker",
+          color: "blue",
+          text: "General Zeki Doğan, İncikent Emlak, Natoyolu Caddesı 56/A, 06630 Mamak/Ankara",
         },
       ],
     }
   },
   computed: {
     cardWidth() {
-      console.log(this.$vuetify.breakpoint.name)
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs':
-          return '100vw'
-        case 'sm':
-          return '100vw'
+        case "xs":
+          return "100vw"
+        case "sm":
+          return "100vw"
         default:
-          return '100vw'
+          return "100vw"
       }
     },
   },

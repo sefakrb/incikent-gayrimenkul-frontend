@@ -185,13 +185,11 @@ export default {
         this.updateAdvertisement()
         return
       }
-      console.log("save adv.")
 
       let formData = new FormData()
       formData.append("image", this.image)
 
       const resim = await imageService.createImage(formData)
-      console.log("resim kaydedildi: ", resim)
 
       const ilan = await advertisementService.createAdvertisement({
         title: this.title,
@@ -202,14 +200,11 @@ export default {
         link: this.link,
         imageId: resim.imageId,
       })
-      console.log("ilan kaydedildi: ", ilan)
 
       this.resetForm()
     },
 
-    async updateAdvertisement() {
-      console.log("edit adv.")
-    },
+    async updateAdvertisement() {},
 
     isValidUrl(urlString) {
       let urlPattern = new RegExp(
@@ -244,7 +239,6 @@ export default {
 
     editedAdvertisement: {
       handler(n, o) {
-        console.log(n, o)
         if (n) {
           this.image = this.baseUrl + "/" + n.imageId
           this.title = n.title

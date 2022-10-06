@@ -285,15 +285,12 @@ export default {
 
   watch: {
     month: {
-      handler(n, o) {
-        console.log(n, o)
-      },
+      handler(n, o) {},
     },
   },
 
   methods: {
     CalculateRate() {
-      console.log(this.mainMoney, this.month, this.rate, typeof this.rate)
       const comp = (parseFloat(1) + parseFloat(this.rate) / 100) ** this.month
       this.resultMonthly = (
         this.mainMoney *
@@ -302,8 +299,6 @@ export default {
         .toFixed(2)
         .toString()
         .replace(/\B(?=(\d{3})+(?!\d))/g, ".")
-      console.log(this.resultMonthly)
-      console.log((this.resultMonthly * this.month).toPrecision(5) / 100)
       this.resultTotal = (this.resultMonthly * this.month)
         .toFixed(2)
         .toString()

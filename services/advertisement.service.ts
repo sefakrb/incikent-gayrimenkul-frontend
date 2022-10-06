@@ -18,7 +18,6 @@ export default {
     },
 
     createAdvertisement(advertisementData: AdvertisementData) {
-        console.log("service: ", advertisementData);
         return advertisement.post("advertisement", advertisementData);
     },
 }
