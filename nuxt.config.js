@@ -21,18 +21,22 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/css/inputNumber.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [    '~/plugins/vuetify-mask.js'
+],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    "@nuxt/typescript-build",
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    
+    '@nuxtjs/dotenv',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -46,12 +50,12 @@ export default {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
-
+  
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -64,6 +68,12 @@ export default {
         },
       },
     },
+  },
+
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    backendUrl: process.env.BACKEND_URL || 'http://localhost:8080'
+
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
