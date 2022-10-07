@@ -1,8 +1,7 @@
 # incikent-gayrimenkul-frontend
 
 <!-- PROJECT LOGO -->
-<br />
-<div align="center">
+<div name="readme-top"  align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="assets/images/incikent-gayrimenkul-logo.png" alt="Logo" width="200" height="150">
   </a>
