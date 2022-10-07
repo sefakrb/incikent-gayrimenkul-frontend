@@ -1,4 +1,4 @@
-# incikent-gayrimenkul
+# incikent-gayrimenkul-frontend
 
 <!-- PROJECT LOGO -->
 <br />
@@ -8,6 +8,11 @@
   </a>
 </div>
 
+
+
+
+<br />
+<br />
 
 
 <!-- TABLE OF CONTENTS -->
@@ -26,17 +31,12 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#pages">Pages</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
   This website is for [İncikent Gayrimenkul](https://incikentgayrimenkul.sahibinden.com/) which is a real estate consultant in Ankara/Turkey
@@ -45,16 +45,11 @@
 ### Built With
 
 * [![Vue][Vue.js]][Vue-url]
-* ![Nuxtjs](https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=#00DC82)
-* ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
-
+* [![Nuxt][Nuxt]][Nuxt-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
 ### Prerequisites
@@ -65,7 +60,6 @@
   ```
 
 ### Installation
-
 
 1. Clone the repo
    ```sh
@@ -93,8 +87,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
-## PAGES
+## Pages
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -103,20 +96,16 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- CONTACT -->
 ## Contact
-
 Sefa Karabaş - sefa799@gmail.com
-
 Project Link: [https://github.com/sefakrb/incikent-gayrimenkul](https://github.com/sefakrb/incikent-gayrimenkul-frontend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
 [Vue-url]: https://vuejs.org/
+[Nuxt]: https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=#00DC82
+[Nuxt-url]: https://nuxtjs.org/
+
