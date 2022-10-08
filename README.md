@@ -62,7 +62,7 @@
 
 1. Clone the repo
    ```sh
-   git clone BURAYALİNKGELCEK
+   git clone https://github.com/sefakrb/incikent-gayrimenkul-frontend.git
    ```
 2. Install NPM packages
    ```sh
