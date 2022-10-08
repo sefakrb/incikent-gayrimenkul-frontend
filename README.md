@@ -1,13 +1,11 @@
-# incikent-gayrimenkul-frontend
+# İncikent Gayrimenkul Frontend
 
 <!-- PROJECT LOGO -->
 <div name="readme-top"  align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="assets/images/incikent-gayrimenkul-logo.png" alt="Logo" width="200" height="150">
+  <a href="https://github.com/sefakrb/incikent-gayrimenkul-frontend">
+    <img src="assets/images/incikent-gayrimenkul-logo.png" alt="Logo">
   </a>
 </div>
-
-
 
 
 <br />
@@ -19,9 +17,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <ul>
         <a href="#built-with">Built With</a>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -87,10 +83,25 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Pages
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+#### Home
+  <img src="assets/pages/home.png" alt="Logo" >
+  
+#### Dashboard
+  <img src="assets/pages/dashboard.png" alt="Logo">
+  
+#### All Advertisements
+  <img src="assets/pages/all-advertisements.png" alt="Logo">
+  
+#### Add Advertisements
+  <img src="assets/pages/add-advertisement.png" alt="Logo" >
+  
+#### Edit Advertisements
+  <img src="assets/pages/edit-advertisement.png" alt="Logo">
+  
+#### Contact
+  <img src="assets/pages/contact.png" alt="Logo" >
+  <img src="assets/pages/contact2.png" alt="Logo">
+  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
